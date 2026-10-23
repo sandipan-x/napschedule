@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baby Nap Schedule by Age — Wake Windows Chart | NapSchedule</title>
+<meta name="description" content="The right nap schedule for your baby's exact age — wake windows, nap count and a sample day.">
+<link rel="canonical" href="https://napschedule.fixoraa.tech/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Baby Nap Schedule by Age — Wake Windows Chart | NapSchedule">
+<meta property="og:description" content="The right nap schedule for your baby's exact age — wake windows, nap count and a sample day.">
+<meta property="og:url" content="https://napschedule.fixoraa.tech/">
+<meta property="og:type" content="website">
+<script defer src="https://t.fixoraa.tech/track.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dekko&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "NapSchedule",
+      "url": "https://napschedule.fixoraa.tech",
+      "applicationCategory": "Parenting Tools",
+      "operatingSystem": "Web",
+      "description": "The right nap schedule for your baby's exact age \u2014 wake windows, nap count and a sample day.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many naps does a 6 month old need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most 6-month-olds take 2 to 3 naps a day, totaling about 2.5 to 3.5 hours of daytime sleep. Many are mid-transition: three naps on days with an early wake-up, two longer naps on good days. By 7 to 8 months, the vast majority have settled into two naps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a wake window?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A wake window is how long your baby can comfortably stay awake between sleeps. Newborns manage 45 to 60 minutes; it stretches to 2 to 3 hours by 6 months, 3 to 4 hours by 12 months, and 5 to 6 hours by age 2. Watching the window prevents the overtired cycle of short naps and wired bedtimes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When do babies drop to one nap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most babies transition from two naps to one between 13 and 18 months. Signs include consistently refusing the morning nap or the afternoon nap sliding so late it ruins bedtime. The transition takes weeks \u2014 alternate one-nap and two-nap days and move bedtime earlier on one-nap days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When do toddlers stop napping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The last nap usually fades between 2.5 and 4 years. If dropping it causes 5 a.m. wake-ups or evening meltdowns, the nap is still needed. Replace it with 45 to 60 minutes of quiet time and move bedtime 30 to 60 minutes earlier during the transition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What time should my baby go to bed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For babies 4 months and older, a bedtime between 6:30 and 8 p.m. works best for most families, because it captures the natural evening melatonin rise. Newborns often go down later (9 to 11 p.m.). The right bedtime is the one that follows the last wake window and yields a consistent morning wake-up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this schedule medical advice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. These are general, evidence-informed ranges for typically developing babies. Every child is different, and persistent sleep struggles \u2014 loud snoring, gasping, or extreme difficulty settling \u2014 deserve a conversation with your pediatrician, not a schedule tweak."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{--bg:#FAF2FA;--accent:#A527A5;--tint:#F4DDF4;--ink:#331F33;--muted:#785478;--accent-ink:#FFFFFF;--paper:#FFFFFF;--tape:rgba(165,39,165,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Dekko',cursive;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px;background-image:radial-gradient(var(--tint) 1.5px,transparent 1.5px);background-size:26px 26px}
+.fx-container{max-width:1060px;margin:0 auto;padding:0 20px}
+.fx-header{background:var(--paper);border-bottom:3px solid var(--accent);position:sticky;top:0;z-index:50;box-shadow:0 4px 14px rgba(165,39,165,.08)}
+.fx-headrow{display:flex;align-items:center;gap:14px;padding:12px 20px;flex-wrap:wrap}
+.fx-logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.fx-tile{width:46px;height:46px;background:var(--paper);border:3px solid var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:24px;transform:rotate(-4deg);box-shadow:3px 3px 0 var(--tint);position:relative}
+.fx-tile::before{content:'';position:absolute;top:-11px;left:50%;transform:translateX(-50%) rotate(3deg);width:34px;height:12px;background:var(--tape);border-left:1px dashed rgba(0,0,0,.08);border-right:1px dashed rgba(0,0,0,.08)}
+.fx-name{font-size:23px;font-weight:700;letter-spacing:-.01em}
+.fx-nav{margin-left:auto;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.fx-btn{display:inline-block;padding:8px 18px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid var(--accent);color:var(--accent);background:var(--paper);transition:transform .12s}
+.fx-btn:hover{transform:translateY(-2px) rotate(-1deg)}
+.fx-btn.solid{background:var(--accent);color:var(--accent-ink)}
+.fx-badge{display:inline-block;padding:7px 14px;border-radius:999px;background:var(--tint);color:var(--ink);font-size:14px;border:2px dashed var(--accent)}
+.hero{text-align:center;padding:46px 0 10px}
+.eyebrow{display:inline-block;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);background:var(--paper);border:2px solid var(--accent);padding:7px 18px;margin-bottom:16px;transform:rotate(-1.5deg);box-shadow:3px 3px 0 var(--tint);position:relative}
+.hero h1{font-size:clamp(32px,5vw,50px);line-height:1.1;letter-spacing:-.02em;margin-bottom:12px}
+.lede{font-size:19px;color:var(--muted);max-width:640px;margin:0 auto}
+.tool{margin:30px 0 10px;background:var(--paper);border:3px solid var(--ink);border-radius:18px;padding:30px;box-shadow:8px 8px 0 var(--tint)}
+.ns-age{text-align:center;margin-bottom:26px}
+.ns-age label{font-size:18px;font-weight:700;display:block;margin-bottom:6px}
+.ns-age output{font-size:44px;color:var(--accent);font-weight:700;display:block;margin:6px 0 10px}
+.ns-age input[type=range]{width:min(520px,100%);accent-color:var(--accent);height:34px;cursor:pointer}
+.ns-band{display:inline-block;background:var(--tint);border:2px dashed var(--accent);border-radius:999px;padding:6px 18px;font-size:16px;margin-top:8px}
+.ns-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:8px 0 26px}
+.ns-card{background:var(--paper);border:2px solid var(--ink);border-radius:8px;padding:18px 12px 14px;text-align:center;box-shadow:4px 4px 0 var(--tint);position:relative}
+.ns-card:nth-child(odd){transform:rotate(-1.2deg)}
+.ns-card:nth-child(even){transform:rotate(1.2deg)}
+.ns-card::before{content:'';position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:44px;height:14px;background:var(--tape)}
+.ns-card .v{font-size:30px;font-weight:700;color:var(--accent);line-height:1.15}
+.ns-card .k{font-size:14px;color:var(--muted);margin-top:6px}
+.ns-day h3{font-size:22px;margin-bottom:14px;text-align:center}
+.ns-tl{list-style:none;max-width:560px;margin:0 auto;position:relative;padding-left:34px}
+.ns-tl::before{content:'';position:absolute;left:11px;top:8px;bottom:8px;width:3px;background:var(--tint);border-radius:2px}
+.ns-tl li{position:relative;padding:9px 14px;margin-bottom:10px;background:var(--bg);border:2px solid var(--tint);border-radius:12px;font-size:16px}
+.ns-tl li::before{content:'\263E';position:absolute;left:-31px;top:9px;color:var(--accent);font-size:16px}
+.ns-tl li.nap{background:var(--tint);border-color:var(--accent)}
+.ns-tl .tt{font-weight:700;color:var(--accent);margin-right:8px}
+.ns-note{max-width:640px;margin:20px auto 0;text-align:center;color:var(--muted);font-size:15px}
+.article-sec{margin:44px 0;max-width:780px}
+.article-sec h2{font-size:25px;margin:36px 0 12px;letter-spacing:-.01em;color:var(--ink);border-bottom:3px solid var(--tint);padding-bottom:6px}
+.article-sec p{margin-bottom:14px;color:#4a3348}
+.article-sec ul,.article-sec ol{margin:0 0 14px 24px;color:#4a3348}
+.article-sec li{margin-bottom:6px}
+.faq-sec{margin:36px 0 10px;max-width:780px}
+.faq-sec h2{font-size:25px;margin-bottom:16px}
+.faq-sec details{background:var(--paper);border:2px solid var(--ink);border-radius:12px;margin-bottom:10px;overflow:hidden;box-shadow:3px 3px 0 var(--tint)}
+.faq-sec summary{padding:15px 18px;font-weight:700;cursor:pointer;list-style:none;font-size:17px}
+.faq-sec summary::-webkit-details-marker{display:none}
+.faq-sec summary:hover{color:var(--accent)}
+.faq-sec details[open] summary{border-bottom:2px solid var(--tint);color:var(--accent)}
+.faq-sec details p{padding:14px 18px;color:#4a3348;font-size:16px}
+.fx-footer{background:var(--ink);color:#f2e4f2;margin-top:48px;padding:42px 0 36px}
+.fx-footer .fx-brand{font-size:24px;font-weight:700;margin-bottom:8px;color:#fff}
+.fx-footer p{font-size:15px;color:#cfa9cf;max-width:640px;margin-bottom:14px}
+.fx-footer nav{display:flex;gap:18px;margin-bottom:16px}
+.fx-footer nav a{color:#fff;font-weight:700;text-decoration:none;border-bottom:2px solid var(--accent)}
+.fx-credit{font-size:14px!important}
+.fx-credit a{color:#f0b8f0;font-weight:700}
+@media(max-width:680px){.ns-cards{grid-template-columns:repeat(2,1fr)}.tool{padding:20px}.fx-nav{margin-left:0}}
+
+</style>
+</head>
+<body>
+<header class="fx-header">
+  <div class="fx-container fx-headrow">
+    <a class="fx-logo" href="https://napschedule.fixoraa.tech/" aria-label="NapSchedule home">
+      <span class="fx-tile" aria-hidden="true">🌙</span>
+      <span class="fx-name">NapSchedule</span>
+    </a>
+    <nav class="fx-nav" aria-label="Site">
+      <a class="fx-btn" href="https://fixoraa.tech">Home</a>
+      <a class="fx-btn solid" href="https://fixoraa.tech">More Tools</a>
+      <span class="fx-badge">&#8734; Unlimited Free Usage</span>
+    </nav>
+  </div>
+</header>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pt-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:728px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <div class="origin-top scale-[0.44] sm:scale-100 shrink-0">
+        <script>
+          atOptions = { 'key' : '4e68ac77881c17fe128a46565d9a4e8c', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+        </script>
+        <script src="https://www.highrevenueformat.com/4e68ac77881c17fe128a46565d9a4e8c/invoke.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<main class="fx-container">
+  <section class="hero">
+    <span class="eyebrow">Sleep, decoded by age</span>
+    <h1>Baby Nap Schedule by Age</h1>
+    <p class="lede">Slide to your baby's exact age and get wake windows, nap counts and a full sample day — built from pediatric sleep guidance, not guesswork.</p>
+  </section>
+  <section class="tool" aria-label="NapSchedule tool">
+<div class="ns-age">
+      <label for="ns-slider">How old is your baby?</label>
+      <output id="ns-out" for="ns-slider">6 months</output>
+      <input type="range" id="ns-slider" min="0" max="36" step="1" value="6" aria-label="Baby age in months">
+      <div><span class="ns-band" id="ns-band">6–8 months</span></div>
+    </div>
+    <div class="ns-cards">
+      <div class="ns-card"><div class="v" id="ns-naps">2–3</div><div class="k">naps per day</div></div>
+      <div class="ns-card"><div class="v" id="ns-ww">2–3 h</div><div class="k">wake window</div></div>
+      <div class="ns-card"><div class="v" id="ns-day">2.5–3.5 h</div><div class="k">daytime sleep</div></div>
+      <div class="ns-card"><div class="v" id="ns-night">11–12 h</div><div class="k">night sleep</div></div>
+    </div>
+    <div class="ns-day">
+      <h3>📸 Sample day</h3>
+      <ul class="ns-tl" id="ns-tl"></ul>
+      <p class="ns-note">A starting point, not a prescription. Shift everything earlier or later to match your family's real wake-up time — the gaps between sleeps matter more than the clock.</p>
+    </div>
+  </section>
+  <article class="article-sec">
+<h2>Why Wake Windows Run the Show</h2>
+<p>If you have ever watched a cheerful baby transform into a tiny screaming gremlin in the space of twenty minutes, you have met the wake window — the stretch of awake time a baby can comfortably handle before tiredness turns toxic. A baby nap schedule by age is really just a map of these windows: how long your baby can stay up, how many naps that implies, and how the whole day stacks together. Get the windows right and naps lengthen, bedtime stops being a battle, and night sleep consolidates. Get them wrong and you get the classic overtired loop: short naps, wired bedtimes, and early-morning parties nobody wanted.</p>
+<p>Wake windows grow predictably with age because they track brain maturation. A newborn's window is barely 45 to 60 minutes — feed, brief stare at the ceiling fan, back to sleep. By six months it is two to three hours; by a year, three to four; by two, five to six. These are ranges, not appointments. Some babies run 15 minutes shorter, some longer, and the same baby varies by time of day: the first window of the morning is usually the shortest, the last window before bed the longest. The schedule generator above uses the midpoint of each age band's range, which is why it works as a starting template you then tune to your child.</p>
+<h2>Newborns (0–3 Months): Sleep Is the Schedule</h2>
+<p>For the first three months, forget clock schedules entirely and follow the baby. Newborns sleep 14 to 17 hours in a 24-hour period, broken into six to eight naps with wake windows of just 45 to 90 minutes. Their circadian rhythm has not kicked in yet, so day and night are genuinely confusing to them — which is why the classic advice matters: keep nights dark, boring and quiet, and days bright and social. Total daytime sleep runs five to seven hours, nighttime eight to eleven, and bedtime is often late (9 to 11 p.m.) because melatonin production is still ramping up.</p>
+<p>At this age the most useful skill is spotting the earliest tired cues — staring off, jerky movements, turning away from stimulation — because by the time a newborn yawns or cries, you are already late. An overtired newborn paradoxically fights sleep harder, thanks to a cortisol spike. So the practical newborn routine is almost embarrassingly simple: feed, keep the baby upright briefly, watch for the first glassy stare, and start soothing immediately. White noise, swaddling and gentle rocking are not spoiling anything; they are recreating the womb conditions the nervous system still expects.</p>
+<h2>The 4-Month Shift: Naps Start to Organize</h2>
+<p>Around four months, infant sleep architecture permanently changes — the famous four-month sleep regression. Sleep cycles mature into adult-like stages, and babies start waking fully between cycles. Daytime sleep begins organizing into three to four distinct naps with wake windows stretching to 90 minutes to two hours. Total daytime sleep drops to three to four hours while nighttime sleep extends to ten to twelve. This is the age where a loose daily rhythm first becomes possible, even if it is not yet a rigid schedule.</p>
+<p>The practical approach at four to five months: aim for the first nap about 90 minutes after morning wake-up (it is usually the easiest and longest nap of the day), then follow two-hour windows. The fourth nap is often a short late-afternoon catnap that exists purely to bridge to bedtime — and it is the first one to disappear. If bedtime starts creeping past 8 p.m. or the last nap refuses to happen, that catnap is telling you it is done. Many parents find a consistent bedtime routine — bath, book, song — pays off enormously from this age onward, because the baby can now actually learn the sequence means sleep.</p>
+<h2>6–8 Months: The Classic Two-to-Three Nap Rhythm</h2>
+<p>Six months is the sweet spot this calculator's defaults describe: two to three naps, wake windows of two to three hours, about two and a half to three and a half hours of daytime sleep, and eleven to twelve hours overnight. Most six-month-olds still take three naps, but the third is shrinking; by seven to eight months, most have dropped it and settled into a clean two-nap day. The two-nap schedule is many parents' favorite era: morning nap around 9 a.m., afternoon nap around 1 p.m., bedtime around 7 p.m.</p>
+<p>The transition from three naps to two is the trickiest schedule change of the first year because it takes weeks. Signs your baby is ready: the third nap is consistently refused or pushes bedtime past 8:30 p.m., or the afternoon nap starts starting so late it collides with bedtime. During the transition, alternate two-nap and three-nap days based on how the morning went — an early wake-up or short morning nap means you will likely need that third catnap. Move bedtime 30 to 60 minutes earlier on two-nap days to prevent overtiredness. Within two to four weeks the new rhythm clicks.</p>
+<h2>9–12 Months: Locking In Two Naps</h2>
+<p>By nine months the two-nap schedule is firmly established for most babies: wake windows of three to four hours, two to three hours of daytime sleep, and eleven to twelve hours at night. A common nine-month day looks like 7 a.m. wake, 9:30 a.m. nap, 2 p.m. nap, 7:30 p.m. bed. The morning wake window is usually the shortest (around three hours) and the pre-bed window the longest (up to four), which is why the afternoon nap often lands later than parents expect.</p>
+<p>This is also the age of nap strikes that are not really regressions. Around nine to ten months, separation anxiety peaks and standing/pulling up becomes irresistible crib entertainment. Babies may chat, practice standing, or protest for 30 to 45 minutes at nap time and then sleep normally. The key distinction: a baby who plays happily in the crib for a while and then sleeps is not ready to drop a nap; a baby who skips the nap entirely for two weeks straight and is cheerful until bedtime might be. Do not rush the two-to-one transition — most babies need two naps until 13 to 18 months, and dropping too early is the top cause of 5 a.m. wake-ups.</p>
+<h2>13–24 Months: The Two-to-One Transition</h2>
+<p>The move from two naps to one is the longest transition in baby sleep, often spanning two to three months between 13 and 18 months. Early signs include refusing the morning nap, taking forever to fall asleep for it, or the afternoon nap sliding so late that bedtime becomes a negotiation. The classic solution is the single midday nap: push the morning nap 15 to 30 minutes later every few days until it lands around 11:30 a.m. to noon, then let it lengthen into a glorious 90-minute to two-hour block.</p>
+<p>Once on one nap, expect a wake window of about five to six hours before the nap and four to five after, with bedtime landing around 7 to 8 p.m. Daytime sleep totals 90 minutes to two and a half hours; nighttime stays at eleven to twelve. During the transition, protect the schedule fiercely on two-nap days and offer a 15-minute car catnap on hard days rather than forcing a full morning nap. And watch for the false summit: many toddlers look ready at 12 months because of a developmental leap, then clearly need two naps again at 14 months. Follow the two-week rule — a pattern sustained for two weeks is real; anything shorter is a phase.</p>
+<h2>Toddlers 2–3: Protecting the Last Nap</h2>
+<p>Somewhere between two and a half and four years, the last nap fades. Wake windows stretch past six hours, daytime sleep shrinks to zero to 90 minutes, and nighttime sleep holds at ten and a half to twelve hours. The nap does not usually vanish overnight; it becomes intermittent, then short, then skipped on busy days. The tell that it is truly ending: bedtime stays easy and morning wake-up stays consistent on no-nap days. If dropping the nap brings 5 a.m. mornings or 8 p.m. meltdowns, the nap is still load-bearing.</p>
+<p>When the nap goes, replace it with quiet time — 45 to 60 minutes of independent play in the room — which preserves the midday reset without the bedtime cost. Move bedtime 30 to 60 minutes earlier during the transition; an overtired toddler without a nap needs an earlier bedtime, not a later one, which surprises many parents. Keep the room dark and the routine identical on nap and no-nap days. And remember the totals: most two- to three-year-olds still need eleven to fourteen hours of sleep in 24 hours, so a dropped nap must be repaid at night or you will see the debt within days.</p>
+<h2>Reading Tired Cues vs. Watching the Clock</h2>
+<p>Wake windows are averages, and your baby is not an average. The parents who sleep best use both tools: the clock tells them when to start watching, and the baby tells them when to act. Early cues include decreased activity, quieter babbling, staring into space, and rubbing the face. Late cues — yawning, eye-rubbing, fussing, arching — mean the window is closing fast. A baby showing late cues at the start of the expected window is telling you their personal window runs short; one still playing happily 20 minutes past it runs long.</p>
+<p>Context adjusts everything. A high-stimulation morning (visitors, errands, a class) shortens the next window; a calm day at home lengthens it. Teething, illness, developmental leaps and travel all temporarily shrink windows — offer sleep 15 to 30 minutes early during those stretches rather than fighting the schedule. Keep a simple log for a week: wake times, nap starts and lengths, bedtime, night wakings. Patterns jump out fast, and you will spot your child's real windows far more reliably than any chart can hand them to you. The calculator gives you the map; the log gives you the terrain.</p>
+<h2>Building Your Sample Day (and When to Break It)</h2>
+<p>The sample day above is generated from your baby's age band: it starts at 7 a.m., alternates the midpoint wake window with the average nap length, and lands bedtime where the math says it should. Treat it as scaffolding. Anchor the two fixed points — morning wake time and bedtime — and let the naps float between them. A consistent wake time is the single most powerful schedule stabilizer because it anchors circadian rhythm; a wake time that drifts by an hour daily will destabilize naps no matter how perfect the windows are.</p>
+<p>Break the schedule cheerfully for real life. One off-schedule day for a party, travel or a pediatrician appointment does not ruin anything — just offer the next sleep 30 minutes early to pay back the debt. What matters is the pattern across weeks, not any single day. And revisit the calculator monthly: the bands change fast in the first year, and the schedule that worked beautifully at six months will be wrong at nine. If naps suddenly shorten or bedtime becomes a circus, check whether your baby has aged into the next band before assuming a regression. Usually, they have just grown.</p>
+  </article>
+  <section class="faq-sec" aria-label="Frequently asked questions">
+    <h2>Frequently asked questions</h2>
+    <details><summary>How many naps does a 6 month old need?</summary><p>Most 6-month-olds take 2 to 3 naps a day, totaling about 2.5 to 3.5 hours of daytime sleep. Many are mid-transition: three naps on days with an early wake-up, two longer naps on good days. By 7 to 8 months, the vast majority have settled into two naps.</p></details>
+    <details><summary>What is a wake window?</summary><p>A wake window is how long your baby can comfortably stay awake between sleeps. Newborns manage 45 to 60 minutes; it stretches to 2 to 3 hours by 6 months, 3 to 4 hours by 12 months, and 5 to 6 hours by age 2. Watching the window prevents the overtired cycle of short naps and wired bedtimes.</p></details>
+    <details><summary>When do babies drop to one nap?</summary><p>Most babies transition from two naps to one between 13 and 18 months. Signs include consistently refusing the morning nap or the afternoon nap sliding so late it ruins bedtime. The transition takes weeks — alternate one-nap and two-nap days and move bedtime earlier on one-nap days.</p></details>
+    <details><summary>When do toddlers stop napping?</summary><p>The last nap usually fades between 2.5 and 4 years. If dropping it causes 5 a.m. wake-ups or evening meltdowns, the nap is still needed. Replace it with 45 to 60 minutes of quiet time and move bedtime 30 to 60 minutes earlier during the transition.</p></details>
+    <details><summary>What time should my baby go to bed?</summary><p>For babies 4 months and older, a bedtime between 6:30 and 8 p.m. works best for most families, because it captures the natural evening melatonin rise. Newborns often go down later (9 to 11 p.m.). The right bedtime is the one that follows the last wake window and yields a consistent morning wake-up.</p></details>
+    <details><summary>Is this schedule medical advice?</summary><p>No. These are general, evidence-informed ranges for typically developing babies. Every child is different, and persistent sleep struggles — loud snoring, gasping, or extreme difficulty settling — deserve a conversation with your pediatrician, not a schedule tweak.</p></details>
+  </section>
+</main>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pb-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:300px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <script>
+      (function(grnp){
+      var d = document,
+          s = d.createElement('script'),
+          l = d.currentScript || d.scripts[d.scripts.length - 1];
+      s.settings = grnp || {};
+      s.src = "\/\/peacefulbicycle.com\/bnXtVJsnd.GElF0oYVWQcY\/Qe\/mf9qu-ZqUtlZk\/PzTHcx1LM\/jWIZwkMTj\/U\/t-NrzmUnyOMsj\/AzydO\/Qx";
+      s.async = true;
+      s.referrerPolicy = 'no-referrer-when-downgrade';
+      l.parentNode.insertBefore(s, l);
+      })({})
+      </script>
+    </div>
+  </div>
+</div>
+<footer class="fx-footer">
+  <div class="fx-container">
+    <div class="fx-brand">NapSchedule</div>
+    <p>NapSchedule turns your baby’s age in months into a concrete daily nap plan — wake windows, nap counts and a sample-day timeline.</p>
+    <nav aria-label="Footer">
+      <a href="https://fixoraa.tech">Home</a>
+      <a href="https://fixoraa.tech">More Tools</a>
+    </nav>
+    <p class="fx-credit">Made by <a href="https://fixoraa.tech">Fixoraa</a> &middot; Free forever, no signup.</p>
+  </div>
+</footer>
+<script>
+function napSchedule(ageMonths){
+  var bands=[
+    {max:1,  label:'Newborn (0\u20131 month)', naps:[6,8], ww:[45,60],   day:[5,7],    night:[8,11]},
+    {max:3,  label:'2\u20133 months',          naps:[4,6], ww:[60,90],   day:[4,6],    night:[9,11]},
+    {max:5,  label:'4\u20135 months',          naps:[3,4], ww:[90,120],  day:[3,4],    night:[10,12]},
+    {max:8,  label:'6\u20138 months',          naps:[2,3], ww:[120,180], day:[2.5,3.5],night:[11,12]},
+    {max:12, label:'9\u201312 months',         naps:[2,2], ww:[180,240], day:[2,3],    night:[11,12]},
+    {max:18, label:'13\u201318 months',        naps:[1,2], ww:[240,300], day:[1.5,2.5],night:[11,12]},
+    {max:24, label:'19\u201324 months',        naps:[1,1], ww:[300,360], day:[1.5,2.5],night:[11,12]},
+    {max:36, label:'2\u20133 years',           naps:[0,1], ww:[360,420], day:[0,1.5],  night:[10.5,12]}
+  ];
+  var b=bands[bands.length-1];
+  for(var i=0;i<bands.length;i++){ if(ageMonths<=bands[i].max){ b=bands[i]; break; } }
+  var napsAvg=(b.naps[0]+b.naps[1])/2, wwAvg=(b.ww[0]+b.ww[1])/2, dayAvg=(b.day[0]+b.day[1])/2;
+  var napLen = napsAvg>0 ? Math.round(dayAvg*60/napsAvg) : 0;
+  function fmt(m){ m=((m%1440)+1440)%1440; var h=Math.floor(m/60), mm=Math.round(m%60), ap=h>=12?'PM':'AM'; h=h%12; if(h===0)h=12; return h+':'+(mm<10?'0':'')+mm+' '+ap; }
+  var day=[]; var t=7*60;
+  day.push({t:fmt(t), e:'Wake up for the day'});
+  var n=Math.round(napsAvg);
+  for(var k=0;k<n;k++){
+    t+=wwAvg; day.push({t:fmt(t), e:'Nap '+(k+1)+' ('+napLen+' min)'});
+    t+=napLen; day.push({t:fmt(t), e:'Wake from nap '+(k+1)});
+  }
+  if(n>0){ t+=wwAvg*0.9; day.push({t:fmt(t), e:'Bedtime'}); }
+  else { day.push({t:fmt(19*60+30), e:'Bedtime (no nap needed)'}); }
+  var r2=function(x){ return Math.round(x*100)/100; };
+  return {
+    ageMonths: ageMonths, band: b.label, naps: b.naps,
+    wakeWindowMin: b.ww, daySleepH: b.day, nightSleepH: b.night,
+    totalSleepH: [r2(b.day[0]+b.night[0]), r2(b.day[1]+b.night[1])],
+    sampleDay: day
+  };
+}
+(function(){
+var slider=document.getElementById('ns-slider');
+function fmtWW(mins){var lo=mins[0],hi=mins[1];function h(m){var v=m/60;return (Math.round(v*10)/10)+'';}return lo<90?lo+'–'+hi+' min':h(lo)+'–'+h(hi)+' h';}
+function render(){
+  var age=parseInt(slider.value,10);
+  document.getElementById('ns-out').textContent=age+(age===1?' month':' months');
+  var r=napSchedule(age);
+  document.getElementById('ns-band').textContent=r.band;
+  document.getElementById('ns-naps').textContent=r.naps[0]===r.naps[1]?r.naps[0]:r.naps[0]+'–'+r.naps[1];
+  document.getElementById('ns-ww').textContent=fmtWW(r.wakeWindowMin);
+  document.getElementById('ns-day').textContent=r.daySleepH[0]+'–'+r.daySleepH[1]+' h';
+  document.getElementById('ns-night').textContent=r.nightSleepH[0]+'–'+r.nightSleepH[1]+' h';
+  var tl=document.getElementById('ns-tl');tl.innerHTML='';
+  r.sampleDay.forEach(function(ev){
+    var li=document.createElement('li');
+    if(ev.e.indexOf('Nap')===0){li.className='nap';}
+    var b=document.createElement('span');b.className='tt';b.textContent=ev.t;
+    li.appendChild(b);li.appendChild(document.createTextNode(ev.e));
+    tl.appendChild(li);
+  });
+}
+slider.addEventListener('input',render);render();
+})();
+</script>
+</body>
+</html>
